@@ -49,7 +49,7 @@ Got tricks? Send them to root@thc.org or submit a pull request.
     1. [Shred files without *shred*](#shsfwo-anchor)
     1. [Restore the date of a file](#shrdf-anchor)
     1. [Clean logfile](#shcl-anchor)
-    1. [Hide files from a User without root priviledges](#shhu-anchor)
+    1. [Hide files from a User without root privileges](#shhu-anchor)
  8. [Crypto](#cr-anchor)
     1. [Generate quick random Password](#crgrp-anchor)
     1. [Linux transportable encrypted filesystems](#crltefs-anchor)
