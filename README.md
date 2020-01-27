@@ -56,7 +56,7 @@ Got tricks? Send them to root@thc.org or submit a pull request.
     1. [Encrypting a file](#cref-anchor)
  9. [Miscellaneous](#misc-anchor)
     1. [Sniff a user's SSH session](#sss-anchor)
-    1. [Sniff a user's SSH session without root priviledges](#ssswor-anchor)
+    1. [Sniff a user's SSH session without root privileges](#ssswor-anchor)
     1. [How to survive high latency connections](#hlc-anchor)
     
    
@@ -522,7 +522,7 @@ This will remove any sign of us from the log file:
 ```
 
 <a id="shhu-anchor"></a>
-**7.v. Hide files from that User without root priviledges**
+**7.v. Hide files from that User without root privileges**
 
 Our favorite working directory is */dev/shm/*. This location is volatile memory and will be lost on reboot. NO LOGZ == NO CRIME.
 
@@ -612,7 +612,7 @@ $ strace -e trace=read -p <PID> 2>&1 | while read x; do echo "$x" | grep '^read.
 Dirty way to monitor a user who is using *ssh* to connect to another host from a computer that you control.
 
 <a id="ssswor-anchor"></a>
-**9.ii. Sniff a user's SSH session without root priviledges**
+**9.ii. Sniff a user's SSH session without root privileges**
 
 Even dirtier way in case */proc/sys/kernel/yama/ptrace_scope* is set to 1 (strace will fail on already running SSH clients unless uid=0)
 
